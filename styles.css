@@ -1,34 +1,53 @@
-/* styles.css */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', sans-serif;
     margin: 0;
     padding: 0;
-    background: #f4f4f4;
+    background: #fdfdfd;
     color: #333;
 }
 
 header {
-    background: #333;
+    position: sticky;
+    top: 0;
+    background: #222;
     color: #fff;
-    padding: 1rem;
+    padding: 2rem;
     text-align: center;
+    z-index: 1000;
 }
+
 
 section {
     padding: 2rem;
+    max-width: 1500px;
+    margin: auto;
 }
 
-.project {
-    background: #fff;
-    margin-bottom: 1rem;
-    padding: 1rem;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
 }
+
+.artwork {
+    background: #fff;
+    width: 700px;
+    text-align: center;
+}
+
+    .artwork img {
+        max-width: 100%;
+        border-radius: 4px;
+    }
 
 footer {
     text-align: center;
     padding: 1rem;
-    background: #333;
+    background: #222;
     color: #fff;
+}
+
+html {
+    scroll-behavior: smooth;
 }
