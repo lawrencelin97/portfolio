@@ -11,10 +11,14 @@
     <!-- JustifiedGallery plugin -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js"></script>
+
+    <!-- Lightbox plugin -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
 </head>
 <body>
     <header>
-        <h1>LAWRENCE LIN</h1>
+        <div class="site-title">Lawrence Lin</div>
         <nav class="main-nav">
             <a href="#Animations">Animations</a>
             <a href="#Illustrations">Illustrations</a>
@@ -22,14 +26,15 @@
         </nav>
     </header>
     <section id="Animations">
-        <h2>Animations</h2>
+        <h1>Animations</h1>
+        <iframe width="640" height="360"
+                src="https://www.youtube.com/embed/UkV6Jbn0Ry8"
+                title="Art Showcase"
+                frameborder="0"
+                allowfullscreen>
+        </iframe>
+        <h2>Older Works</h2>
         <div class="gallery">
-            <iframe width="640" height="360"
-                    src="https://www.youtube.com/embed/UkV6Jbn0Ry8"
-                    title="Art Showcase"
-                    frameborder="0"
-                    allowfullscreen>
-            </iframe>
             <iframe width="640" height="360"
                     src="https://www.youtube.com/embed/-BN4foDhtro"
                     title="Art Showcase"
@@ -56,144 +61,154 @@
         </div>
     </section>
     <section id="Illustrations">
-        <h2>Illustrations</h2>
-        <div id="myGallery">
+        <h1>Illustrations</h1>
+        <div id="illustrationGallery">
 
-            <a href="fullsize1.jpg">
-                <img src="artworks/illustrations/1.jpg" alt="illustration1" />
+            <a href="artworks/illustrations/illustration1.jpg" class="glightbox">
+                <img src="artworks/illustrations/illustration1.jpg" alt="illustration1" />
             </a>
-            <a href="fullsize1.jpg">
-                <img src="artworks/illustrations/2.jpg" alt="illustration2" />
+            <a href="artworks/illustrations/illustration2.jpg" class="glightbox">
+                <img src="artworks/illustrations/illustration2.jpg" alt="illustration2" />
             </a>
-            <a href="fullsize1.jpg">
-                <img src="artworks/illustrations/3.jpg" alt="illustration3" />
+            <a href="artworks/illustrations/illustration3.jpg" class="glightbox">
+                <img src="artworks/illustrations/illustration3.jpg" alt="illustration3" />
             </a>
-            <a href="fullsize1.jpg">
-                <img src="artworks/illustrations/4.jpg" alt="illustration4" />
+            <a href="artworks/illustrations/illustration4.jpg" class="glightbox">
+                <img src="artworks/illustrations/illustration4.jpg" alt="illustration4" />
             </a>
-            <a href="fullsize1.jpg">
-                <img src="artworks/illustrations/5.jpg" alt="illustration5" />
+            <a href="artworks/illustrations/illustration5.jpg" class="glightbox">
+                <img src="artworks/illustrations/illustration5.jpg" alt="illustration5" />
             </a>
-            <a href="fullsize1.jpg">
-                <img src="artworks/illustrations/6.jpg" alt="illustration6" />
+            <a href="artworks/illustrations/illustration6.jpg" class="glightbox">
+                <img src="artworks/illustrations/illustration6.jpg" alt="illustration6" />
             </a>
-            <a href="fullsize1.jpg">
-                <img src="artworks/illustrations/7.jpg" alt="illustration7" />
+            <a href="artworks/illustrations/illustration7.jpg" class="glightbox">
+                <img src="artworks/illustrations/illustration7.jpg" alt="illustration7" />
             </a>
-            <a href="fullsize1.jpg">
-                <img src="artworks/illustrations/8.jpg" alt="illustration8" />
+            <a href="artworks/illustrations/illustration8.jpg" class="glightbox">
+                <img src="artworks/illustrations/illustration8.jpg" alt="illustration8" />
             </a>
         </div>
-</section>
+    </section>
     <section id="Studies">
-        <h2>Studies</h2>
-        <div class="gallery gallery-3">
-            <div class="artwork">
-                <img src="artworks/studies/1.jpg" alt="Study1" />
-            </div>
-            <div class="artwork">
-                <img src="artworks/studies/2.jpg" alt="Study2" />
-            </div>
-            <div class="artwork">
-                <img src="artworks/studies/3.jpg" alt="Study3" />
-            </div>
-            <div class="artwork">
-                <img src="artworks/studies/4.jpg" alt="Study4" />
-            </div>
-            <div class="artwork">
-                <img src="artworks/studies/5.jpg" alt="Study5" />
-            </div>
-            <div class="artwork">
-                <img src="artworks/studies/6.jpg" alt="Study6" />
-            </div>
-            <div class="artwork">
-                <img src="artworks/studies/7.jpg" alt="Study7" />
-            </div>
-            <div class="artwork">
-                <img src="artworks/studies/8.jpg" alt="Study8" />
-            </div>
-            <div class="artwork">
-                <img src="artworks/studies/9.jpg" alt="Study9" />
-            </div>
-            <div class="artwork">
-                <img src="artworks/studies/10.jpg" alt="Study10" />
-            </div>
-            <div class="artwork">
-                <img src="artworks/studies/11.jpg" alt="Study11" />
-            </div>
-            <div class="artwork">
-                <img src="artworks/studies/12.jpg" alt="Study12" />
-            </div>
-            <div class="artwork">
-                <img src="artworks/studies/13.jpg" alt="Study13" />
-            </div>
-            <div class="artwork">
-                <img src="artworks/studies/14.jpg" alt="Study14" />
-            </div>
-            <div class="artwork">
-                <img src="artworks/studies/15.jpg" alt="Study15" />
-            </div>
+        <h1>Studies</h1>
+        <div id="studyGallery">
+            <a href="artworks/studies/studies1.jpg" class="glightbox">
+                <img src="artworks/studies/studies1.jpg" alt="study1" />
+            </a>
+            <a href="artworks/studies/studies2.jpg" class="glightbox">
+                <img src="artworks/studies/studies2.jpg" alt="study2" />
+            </a>
+            <a href="artworks/studies/studies3.jpg" class="glightbox">
+                <img src="artworks/studies/studies3.jpg" alt="study3" />
+            </a>
+            <a href="artworks/studies/studies4.jpg" class="glightbox">
+                <img src="artworks/studies/studies4.jpg" alt="study4" />
+            </a>
+            <a href="artworks/studies/studies5.jpg" class="glightbox">
+                <img src="artworks/studies/studies5.jpg" alt="study5" />
+            </a>
+            <a href="artworks/studies/studies6.jpg" class="glightbox">
+                <img src="artworks/studies/studies6.jpg" alt="study6" />
+            </a>
+            <a href="artworks/studies/studies7.jpg" class="glightbox">
+                <img src="artworks/studies/studies7.jpg" alt="study7" />
+            </a>
+            <a href="artworks/studies/studies8.jpg" class="glightbox">
+                <img src="artworks/studies/studies8.jpg" alt="study8" />
+            </a>
+            <a href="artworks/studies/studies9.jpg" class="glightbox">
+                <img src="artworks/studies/studies9.jpg" alt="study9" />
+            </a>
+            <a href="artworks/studies/studies10.jpg" class="glightbox">
+                <img src="artworks/studies/studies10.jpg" alt="study10" />
+            </a>
+            <a href="artworks/studies/studies11.jpg" class="glightbox">
+                <img src="artworks/studies/studies11.jpg" alt="study11" />
+            </a>
+            <a href="artworks/studies/studies12.jpg" class="glightbox">
+                <img src="artworks/studies/studies12.jpg" alt="study12" />
+            </a>
+            <a href="artworks/studies/studies13.jpg" class="glightbox">
+                <img src="artworks/studies/studies13.jpg" alt="study13" />
+            </a>
+            <a href="artworks/studies/studies14.jpg" class="glightbox">
+                <img src="artworks/studies/studies14.jpg" alt="study14" />
+            </a>
+            <a href="artworks/studies/studies15.jpg" class="glightbox">
+                <img src="artworks/studies/studies15.jpg" alt="study15" />
+            </a>
         </div>
         <h2>Sketches</h2>
-        <div class="gallery gallery-3">
-            <div class="artwork">
-                <img src="artworks/sketches/0.jpg" alt="sketch1" />
-            </div>
-            <div class="artwork">
-                <img src="artworks/sketches/1.jpg" alt="sketch2" />
-            </div>
-            <div class="artwork">
-                <img src="artworks/sketches/2.jpg" alt="sketch3" />
-            </div>
-            <div class="artwork">
-                <img src="artworks/sketches/3.jpg" alt="sketch4" />
-            </div>
-            <div class="artwork">
-                <img src="artworks/sketches/4.jpg" alt="sketch5" />
-            </div>
-            <div class="artwork">
-                <img src="artworks/sketches/5.jpg" alt="sketch6" />
-            </div>
-            <div class="artwork">
-                <img src="artworks/sketches/6.jpg" alt="sketch7" />
-            </div>
-            <div class="artwork">
-                <img src="artworks/sketches/7.jpg" alt="sketch8" />
-            </div>
-            <div class="artwork">
-                <img src="artworks/sketches/8.jpg" alt="sketch9" />
-            </div>
-            <div class="artwork">
-                <img src="artworks/sketches/9.jpg" alt="sketch10" />
-            </div>
-            <div class="artwork">
-                <img src="artworks/sketches/10.jpg" alt="sketch11" />
-            </div>
-            <div class="artwork">
-                <img src="artworks/sketches/11.jpg" alt="sketch12" />
-            </div>
+        <div id="sketchGallery">
+            <a href="artworks/sketches/sketch1.jpg" class="glightbox">
+                <img src="artworks/sketches/sketch1.jpg" alt="sketch1" />
+            </a>
+            <a href="artworks/sketches/sketch2.jpg" class="glightbox">
+                <img src="artworks/sketches/sketch2.jpg" alt="sketch2" />
+            </a>
+            <a href="artworks/sketches/sketch3.jpg" class="glightbox">
+                <img src="artworks/sketches/sketch3.jpg" alt="sketch3" />
+            </a>
+            <a href="artworks/sketches/sketch4.jpg" class="glightbox">
+                <img src="artworks/sketches/sketch4.jpg" alt="sketch4" />
+            </a>
+            <a href="artworks/sketches/sketch5.jpg" class="glightbox">
+                <img src="artworks/sketches/sketch5.jpg" alt="sketch5" />
+            </a>
+            <a href="artworks/sketches/sketch6.jpg" class="glightbox">
+                <img src="artworks/sketches/sketch6.jpg" alt="sketch6" />
+            </a>
+            <a href="artworks/sketches/sketch7.jpg" class="glightbox">
+                <img src="artworks/sketches/sketch7.jpg" alt="sketch7" />
+            </a>
+            <a href="artworks/sketches/sketch8.jpg" class="glightbox">
+                <img src="artworks/sketches/sketch8.jpg" alt="sketch8" />
+            </a>
+            <a href="artworks/sketches/sketch9.jpg" class="glightbox">
+                <img src="artworks/sketches/sketch9.jpg" alt="sketch9" />
+            </a>
+            <a href="artworks/sketches/sketch10.jpg" class="glightbox">
+                <img src="artworks/sketches/sketch10.jpg" alt="sketch10" />
+            </a>
+            <a href="artworks/sketches/sketch11.jpg" class="glightbox">
+                <img src="artworks/sketches/sketch11.jpg" alt="sketch11" />
+            </a>
+            <a href="artworks/sketches/sketch12.jpg" class="glightbox">
+                <img src="artworks/sketches/sketch12.jpg" alt="sketch12" />
+            </a>
         </div>
     </section>
 
-    <section>
-        <h2>Contact</h2>
-        <p>Email: lawrence@example.com</p>
-        <p>Instagram: <a href="https://instagram.com/lawrence.art" target="_blank">@lawrence.art</a></p>
-    </section>
+    <script>
+        $(document).ready(function () {
+            $('#illustrationGallery').justifiedGallery({
+                rowHeight: 450,
+                margins: 10,
+                lastRow: 'nojustify',
+                captions: false
+            });
+        });
+        $(document).ready(function () {
+            $('#studyGallery').justifiedGallery({
+                rowHeight: 350,
+                margins: 10,
+                lastRow: 'nojustify',
+                captions: false
+            });
+        });
+        $(document).ready(function () {
+            $('#sketchGallery').justifiedGallery({
+                rowHeight: 300,
+                margins: 10,
+                lastRow: 'nojustify',
+                captions: false
+            });
+        });
+        const lightbox = GLightbox({ selector: '.glightbox' });
 
-    <footer>
-        <p>&copy; 2025 Lawrence. All rights reserved.</p>
-    </footer>
+    </script>
 </body>
 </html>
 
-<script>
-    $(document).ready(function () {
-        $('#myGallery').justifiedGallery({
-            rowHeight: 200,
-            margins: 10,
-            lastRow: 'nojustify',
-            captions: false
-        });
-    });
-</script>
+
