@@ -27,17 +27,6 @@ header {
     z-index: 1000;
 }
 
-iframe {
-    max-width: 100%;
-}
-
-@media (max-width: 768px) {
-    iframe {
-        width: 90% !important;
-    }
-}
-
-
 .main-nav {
     margin-top: 1rem;
 }
