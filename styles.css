@@ -51,20 +51,6 @@ section {
     scroll-margin-top: 7.5rem;
 }
 
-.video-center {
-    display: flex;
-    justify-content: center;
-    margin: 2rem 0;
-}
-
-    .video-center iframe {
-        width: 100%;
-        max-width: 50%; /* or whatever size you prefer */
-        aspect-ratio: 16 / 9;
-        border: none;
-        border-radius: 8px;
-    }
-
 
 .video-row {
     display: flex;
@@ -74,13 +60,6 @@ section {
     margin: 2rem 0;
 }
 
-    .video-row iframe {
-        width: 100%;
-        max-width: calc(100% / 4 - 1rem); /* one-third minus gap */
-        aspect-ratio: 16 / 9;
-        border: none;
-        border-radius: 8px;
-    }
 
 
 
