@@ -44,7 +44,6 @@ header {
         }
 
 
-
 section {
     padding: 2rem;
     max-width: 1600px;
@@ -52,48 +51,37 @@ section {
     scroll-margin-top: 7.5rem;
 }
 
-.gallery-scroll {
+.video-center {
     display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    overflow-x: auto;
-    padding: 1rem;
-    white-space: nowrap;
+    justify-content: center;
+    margin: 2rem 0;
 }
 
-.row {
-    display: flex;
-    gap: 1rem;
-}
-
-    .row img {
-        height: 200px; /* or vary per row */
-        object-fit: cover;
-        border-radius: 4px;
-    }
-
-
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    align-items: flex-start;
-}
-
-.artwork {
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    padding: 1rem;
-    transition: all 0.3s ease;
-}
-
-    .artwork img {
+    .video-center iframe {
         width: 100%;
-        height: auto;
-        display: block;
-        border-radius: 4px;
+        max-width: 50%; /* or whatever size you prefer */
+        aspect-ratio: 16 / 9;
+        border: none;
+        border-radius: 8px;
     }
+
+
+.video-row {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap; /* allows wrapping on smaller screens */
+    margin: 2rem 0;
+}
+
+    .video-row iframe {
+        width: 100%;
+        max-width: calc(100% / 4 - 1rem); /* one-third minus gap */
+        aspect-ratio: 16 / 9;
+        border: none;
+        border-radius: 8px;
+    }
+
 
 
 @media (max-width: 768px) {
