@@ -135,9 +135,9 @@ html {
     .table-images img {
         max-width: 100%;
         height: auto;
-        flex: 1;
         min-width: 0;
         object-fit: contain;
+        display: block;
     }
 
 @media (max-width: 2000px) {
