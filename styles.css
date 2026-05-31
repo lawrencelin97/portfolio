@@ -13,27 +13,56 @@ body {
     margin-top: 1rem;
     margin: 0;
     padding: 0;
-    line-height: 1.2;
+}
+.sub-title {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 1.2rem; /* Adjust size as needed */
+    font-weight: bold;
+    margin-top: 3rem;
+    margin: 0;
+    padding-top: 1rem;
 }
 
+.second-title {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 2.5rem; /* Adjust size as needed */
+    font-weight: bold;
+    margin: auto;
+    padding: 2rem 1rem 1rem 1rem;
+    text-align: center;
+}
 
 header {
     background: #222;
     color: #fff;
-    padding: 2rem;
+    padding: 2rem 0 1.5rem 0;
     text-align: center;
-    position: sticky;
+    /*position: sticky;*/
     top: 0;
     z-index: 1000;
+    border-bottom: 0.1rem solid #444;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #222;
+    color: #fff;
+    height: 5rem;
+    margin-top:3rem;
 }
 
 .main-nav {
     display: flex;
     flex-wrap: nowrap; /* prevent wrapping */
     justify-content: center; /* center the links */
-    overflow-x: auto; /* allow horizontal scroll if needed */
-    margin-top: 1rem;
+    padding: 1rem;
+    border-bottom: 1px solid #444;
     gap: 1.5rem; /* consistent spacing between links */
+    position: sticky;
+    top: 0;
+    background: #222;
+    z-index: 1000;
 }
 
 
@@ -50,14 +79,30 @@ header {
             color: #ffcc00; /* highlight color on hover */
         }
 
+        .main-nav a.active {
+            color: #ffcc00;
+        }
 
 section {
-    padding: 2rem;
-    max-width: 1600px;
+    padding: 0rem;
+    max-width: 65%;
     margin: auto;
-    scroll-margin-top: 7.5rem;
+    scroll-margin-top: 3.5rem;
 }
 
+    section p {
+        font-family: 'Segoe UI', sans-serif;
+        font-size: 1.2rem; /* Adjust size as needed */
+        margin: 0;
+        font-weight: 500;
+        padding: 0.5rem 2rem 0.5rem 2rem;
+        background: #fdfdfd;
+        color: #333;
+        text-align: justify;
+    }
+    section h1{
+        padding:0.5rem;
+    }
 
 .video-row {
     display: flex;
@@ -76,4 +121,45 @@ footer {
 
 html {
     scroll-behavior: smooth;
+}
+
+.table-images {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    margin-top: 2rem;
+}
+
+    .table-images img {
+        max-width: 100%;
+        height: auto;
+        flex: 1;
+        min-width: 0;
+    }
+
+@media (max-width: 2000px) {
+    section {
+        max-width: 75%;
+    }
+}
+
+@media (max-width: 1300px) {
+    section {
+        max-width: 85%;
+    }
+    .table-images {
+        margin: 0 0.5rem 0 0.5rem;
+    }
+}
+
+@media (max-width: 800px) {
+    section {
+        max-width: 100%;
+    }
+    .table-images {
+        margin: 0 0.5rem 0 0.5rem;
+    }
 }
