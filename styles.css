@@ -74,13 +74,15 @@ footer {
         font-size: 1rem; /* shrink slightly if needed */
     }
 
-        .main-nav a:hover {
-            color: #ffcc00; /* highlight color on hover */
-        }
-
         .main-nav a.active {
             color: #ffcc00;
         }
+
+@media (hover: hover) {
+    .main-nav a:hover {
+        color: #ffcc00;
+    }
+}
 
 section {
     padding: 0rem;
@@ -164,8 +166,3 @@ html {
     }
 }
 
-@media (hover: hover) {
-    .main-nav a:hover {
-        color: #ffcc00;
-    }
-}
